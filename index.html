@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="./js/main.js"></script>
+    <title>Tomas Sosa - Javascript</title>
+    
+</head>
+<body>
+    <div id="page-container" class="theme1">
+        <div class='container-fluid'>
+    
+            <h1>Hello, World!</h1>
+
+            <div class="form-container" id="form-container">
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                        <select id="theme" onchange="changeTheme()">
+                            <option value="theme1">Theme #1</option>
+                            <option value="theme2">Theme #2</option>
+                            <option value="theme3">Theme #3</option>
+                        </select>
+                    </div>
+                </div>
+                
+
+                <div class="row">
+                    <div class="col-sm-2">
+                    <label for='name'>Nombre:</label> 
+                    </div>
+                    <div class="col-sm-3">
+                    <input id='name' class="form-control" placeholder='Escribe tu nombre'/>
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col-sm-2">
+                    <label for='lastname'>Apellido:</label>
+                    </div>
+                    <div class="col-sm-3">
+                    <input id='lastname' class="form-control" placeholder='Escribe tu apellido'/>
+                    </div>
+                </div>   
+                <div class="row">  
+                    <div class="col-sm-2">
+                    <label for='age'>Edad:</label>
+                    </div>
+                    <div class="col-sm-3">
+                    <input id='age'class="form-control" placeholder='Escribe tu edad'/>
+                    </div>
+                </div>
+                <div class="row">   
+                    <div class="col-sm-2">
+                    <label for='hobbies'>Hobbie:</label>
+                    </div>
+                    <div class="col-sm-3"> 
+                        <input id='hobbie'class="form-control" placeholder="Escribe un hobbie"/>
+                    </div>
+                    <div class="col-sm-3">
+                        <button type="button" class="btn btn-primary" onclick="addHobbie()">Agregar</button>
+                    </div>
+                </div>   
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div id="hobbies" class="hobbies-list">
+
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+</body>
+</html>
